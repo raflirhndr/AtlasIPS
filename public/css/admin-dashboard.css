@@ -1,0 +1,12 @@
+/* V12 - Dashboard Admin */
+.admin-quick-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
+.quick-action{display:flex;align-items:center;gap:12px;text-align:left;padding:14px;border:1px solid rgba(0,0,0,.08);border-radius:14px;background:var(--surface,#fff);cursor:pointer}
+.quick-action:hover{transform:translateY(-1px)}
+.quick-action>span{display:flex;flex-direction:column;gap:3px}
+.quick-action small{opacity:.7}
+.admin-global-search{margin:18px 0 24px;padding:16px;border:1px solid rgba(0,0,0,.08);border-radius:14px;background:var(--surface,#fff)}
+.admin-global-search label{display:block;font-weight:700;margin-bottom:8px}
+.admin-global-search input{width:100%;box-sizing:border-box}
+.section-count{font-size:.75em;font-weight:700;opacity:.65}
+@media (max-width:900px){.admin-quick-actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.admin-quick-actions{grid-template-columns:1fr}}
